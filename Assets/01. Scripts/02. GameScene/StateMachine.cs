@@ -112,11 +112,12 @@ class StandState : Singleton<StandState>, State<CharacterMove>
         }
 
         Vector3 _moveDir = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
+        float zForce = _moveDir.z;
         t.InputDir = _moveDir;
         _moveDir.Normalize();
         _moveDir = t.tr.TransformDirection(_moveDir);
 
-        t.MoveDir = Vector3.Lerp(t.MoveDir, _moveDir, 1.5f * Time.deltaTime);
+        t.MoveDir = Vector3.Lerp(t.MoveDir, _moveDir, 4.5f * Time.deltaTime);
 
         if(_moveDir.magnitude > 0.0f)
         {
@@ -137,8 +138,6 @@ class StandState : Singleton<StandState>, State<CharacterMove>
             }
             t.speed = Mathf.Lerp(t.speed, 0.0f, 3.0f * Time.deltaTime);
         }
-
-        //t.MoveDir = (t.speed * t.translateSpeed);
     }
 
     public void Exit(CharacterMove t)

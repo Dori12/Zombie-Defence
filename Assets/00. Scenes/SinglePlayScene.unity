@@ -175,6 +175,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ced1d7852048e6419ac1c71d60cd273, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &35549299 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400004, guid: 4ced1d7852048e6419ac1c71d60cd273, type: 3}
+  m_PrefabInternal: {fileID: 35549298}
 --- !u!1 &48276927
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,11 +2225,11 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1211541391}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.106, z: 0.18}
+  m_LocalRotation: {x: 5.2040645e-18, y: -3.523657e-19, z: -2.7105054e-20, w: 1}
+  m_LocalPosition: {x: 0, y: 0.115, z: 0.168}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1686423255}
+  m_Father: {fileID: 35549299}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1518611952 stripped
@@ -2280,10 +2284,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
---- !u!4 &1686423255 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400004, guid: 4ced1d7852048e6419ac1c71d60cd273, type: 3}
-  m_PrefabInternal: {fileID: 35549298}
 --- !u!43 &1839819921
 Mesh:
   m_ObjectHideFlags: 0
