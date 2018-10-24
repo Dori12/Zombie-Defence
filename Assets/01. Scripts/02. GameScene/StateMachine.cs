@@ -227,7 +227,6 @@ class CharacterGlobalState : Singleton<CharacterGlobalState>, State<CharacterMov
         }
         else
         {
-            t.stackGravity = 0.0f;
         }
         direction.y -= t.stackGravity;
         t.controller.Move(direction * Time.deltaTime);
